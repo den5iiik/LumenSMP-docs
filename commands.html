@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Команды — LumenSMP</title>
+  <link rel="icon" href="assets/server-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Мобильная шапка (показывается на узких экранах) -->
+  <header class="mobile-header">
+    <a class="logo" href="index.html"><img data-site-logo src="assets/server-icon.png" alt=""><span data-site-name>LumenSMP</span></a>
+    <div class="spacer"></div>
+    <button class="icon-btn drawer-open-btn" aria-label="Открыть меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+  </header>
+
+  <!-- Кнопка «открыть сайдбар», когда он свёрнут -->
+  <button class="icon-btn reopen-btn" aria-label="Открыть боковое меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg></button>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <a class="logo" href="index.html"><img data-site-logo src="assets/server-icon.png" alt=""><span data-site-name>LumenSMP</span></a>
+        <button class="icon-btn collapse-btn" aria-label="Свернуть боковое меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg></button>
+      </div>
+
+      <!-- Меню рендерится автоматически из assets/js/nav.js -->
+      <nav class="sidebar-nav" data-nav></nav>
+
+      <div class="sidebar-foot">
+        <button class="theme-toggle" aria-label="Переключить тему">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <article class="article">
+
+        <div class="article-header">
+          <h1>Команды</h1>
+          <p>Все команды, которые можно использовать с Lumen+</p>
+        </div>
+
+        <!-- ============================================================
+             ↓↓↓ СОДЕРЖИМОЕ СТРАНИЦЫ — редактируйте HTML ниже ↓↓↓
+             ============================================================ -->
+        <div class="prose">
+          <ul>
+            <li><code>/anon <Сообщение></code><br>
+              Отправляет сообщение в чат анонимно — без вашего ника.<br>
+              Другие игроки видят текст, но не автора.
+            <img src="assets\anon.png" alt="Демонстрация команды /anon"></li>
+            <hr>
+            <li><code>/ball <Вопрос></code><br>
+              Спрашивает магический шар.<br>
+              Ответ рандомный.
+            <img src="assets\ball.png" alt="Демонстрация команды /ball"></li>
+            <hr>
+            <li><code>/broadcast <Объявление></code><br>
+              Отправляет объявление в чат
+            <img src="assets\broadcast.png" alt="Демонстрация команды /broadcast"></li>
+            <hr>
+            <li><code>/chatcolor /chatsettings</code><br>
+              Меняют цвета чата.<br>
+            Подробнее в разделе "Оформление"</li>
+            <hr>
+            <li><code>/dice <Количество бросков></code><br>
+              Бросает кубики и показывает сумму выпавших очков.
+            <img src="assets\dice.png" alt="Демонстрация команды /dice"></li>
+            <hr>
+            <li><code>/pollgui</code><br>
+              Открывает окно создания голосования.
+            <img src="assets\pollgui.png" alt="Демонстрация команды /pollgui"><br>
+            После создания будет отправлено сообщение в чат и все игроки смогут проголосовать.
+            <img src="assets\poll1.png" alt="Демонстрация команды /poll"><br>
+            После окончания будет отправлено сообщение в чат с количеством голосов.
+            <img src="assets\poll2.png" alt="Демонстрация команды /poll"></li>
+            <hr>
+            <li><code>/try <Текст></code><br>
+              Показывает вероятность в процентах.<br>
+              Вероятность отправляется рандомная.
+            <img src="assets\try.png" alt="Демонстрация команды /try"></li>
+          </ul>
+</div>
+        <!-- ↑↑↑ КОНЕЦ СОДЕРЖИМОГО ↑↑↑ -->
+
+        <!-- Кнопки «Пред./След.» рендерятся автоматически из nav.js -->
+        <div class="pager" data-pager></div>
+
+      </article>
+    </main>
+  </div>
+
+  <!-- Мобильное выдвижное меню -->
+  <div class="drawer-backdrop"></div>
+  <nav class="drawer">
+    <div class="sidebar-head">
+      <a class="logo" href="index.html"><img data-site-logo src="assets/server-icon.png" alt=""><span data-site-name>LumenSMP</span></a>
+      <button class="icon-btn drawer-close-btn" aria-label="Закрыть меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+    <nav class="sidebar-nav" data-nav></nav>
+    <div class="sidebar-foot">
+      <button class="theme-toggle" aria-label="Переключить тему">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

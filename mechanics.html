@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Механики — LumenSMP</title>
+  <link rel="icon" href="assets/server-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Мобильная шапка (показывается на узких экранах) -->
+  <header class="mobile-header">
+    <a class="logo" href="index.html"><img data-site-logo src="assets/server-icon.png" alt=""><span data-site-name>LumenSMP</span></a>
+    <div class="spacer"></div>
+    <button class="icon-btn drawer-open-btn" aria-label="Открыть меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+  </header>
+
+  <!-- Кнопка «открыть сайдбар», когда он свёрнут -->
+  <button class="icon-btn reopen-btn" aria-label="Открыть боковое меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg></button>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <a class="logo" href="index.html"><img data-site-logo src="assets/server-icon.png" alt=""><span data-site-name>LumenSMP</span></a>
+        <button class="icon-btn collapse-btn" aria-label="Свернуть боковое меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg></button>
+      </div>
+
+      <!-- Меню рендерится автоматически из assets/js/nav.js -->
+      <nav class="sidebar-nav" data-nav></nav>
+
+      <div class="sidebar-foot">
+        <button class="theme-toggle" aria-label="Переключить тему">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <article class="article">
+
+        <div class="article-header">
+          <h1>Механики</h1>
+          <p>Все механики сервера</p>
+        </div>
+
+        <!-- ============================================================
+             ↓↓↓ СОДЕРЖИМОЕ СТРАНИЦЫ — редактируйте HTML ниже ↓↓↓
+             ============================================================ -->
+        <div class="prose">
+          <h2>Позы</h2>
+          <ul>
+            <li><code>/sit</code> — Сидеть</li>
+            <li><code>/lay</code> — Лежать</li>
+            <li><code>/crawl</code> — Ползти</li>
+            <li><code>/spin</code> — Крутиться</li>
+          </ul>
+          <hr>
+          Сесть можно нажав по полублоку или ступени.<br>
+          Также, написав <code>/sit playertoggle</code> можно сесть на другого игрока, кликнув по нему ПКМ.<br>
+          <hr>
+          <h2>Голосовой чат</h2>
+          На сервере стоит голосовой чат.<br>
+          Чтобы им пользоваться, нужно скачать мод Simple Voice Chat.
+          <hr>
+          <hr2>Эмоции</hr2>
+          На сервере можно использовать эмоции. Чтобы ими пользоваться, нужно скачать мод Emotecraft.
+          <h2>Команды чата</h2>
+          <ul>
+            <li><code>/ignore</code> — Игнорировать игрока</li>
+            <li><code>/ignorelist</code> — Список игнорируемых игроков</li>
+            <li><code>/mail</code> — Отправляет игроку оффлайн личное сообщение, которое придёт, когда он зайдёт на сервер</li>
+            <li><code>/tell /msg /w /message /send /m</code> — Отправляет указанному игроку личное сообщение</li>
+            <li><code>/reply /r</code> — Отвечает личным сообщением на последнее личное сообщение</li>
+          </ul>
+          <hr>
+          <h2>Другие команды</h2>
+          <ul>
+            <li><code>/skin</code> — Поставить скин. Можно указать имя игрока или ссылку на скин.
+            <li><code>/afk</code> — Даёт суффикс афк, чтобы другие игроки понимали, что вы отошли.<br>
+            Включается автоматически если вы бездействуете</li>
+            <li><code>/chatsetting</code> — Открывает меню, в котором можно выключить отображение некоторых сообщений.</li>
+            <li><code>/coin</code> — Подбрасывает монетку в чате</li>
+            <li><code>/helper</code> — Отправляет сообщение Админам.<br>
+            Используйте только при веской причине.</li>
+            <li><code>/minesweeper</code> — Запускает игру сапёр</li>
+            <li><code>/online</code> — Показывает информацию об онлайне игрока</li>
+            <li><code>/ping</code> — Показывает ваш пинг</li>
+            <li><code>/rockpaperscissors /rps</code> — Отправляет другому игроку предложение поиграть в камень ножницы бумага</li>
+            <li><code>/tictactoe /ttt</code> — Отправляет другому игроку предложение поиграть в крестики нолики</li>
+          </ul>
+          <hr>
+          <h2>Могилы</h2>
+          Если вы умрёте с ресурсами, на месте смерти появится "Могила" — сундук с вашими ресурсами.<br>
+          Если вы не заберёте свои ресурсы втечении 15 минут, они пропадут.<br>
+          В первые 5 минут забрать ресурсы из могилы можете только вы, а потом любой игрок сможет их забрать.
+          <hr>
+
+</div>
+        <!-- ↑↑↑ КОНЕЦ СОДЕРЖИМОГО ↑↑↑ -->
+
+        <!-- Кнопки «Пред./След.» рендерятся автоматически из nav.js -->
+        <div class="pager" data-pager></div>
+
+      </article>
+    </main>
+  </div>
+
+  <!-- Мобильное выдвижное меню -->
+  <div class="drawer-backdrop"></div>
+  <nav class="drawer">
+    <div class="sidebar-head">
+      <a class="logo" href="index.html"><img data-site-logo src="assets/server-icon.png" alt=""><span data-site-name>LumenSMP</span></a>
+      <button class="icon-btn drawer-close-btn" aria-label="Закрыть меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+    <nav class="sidebar-nav" data-nav></nav>
+    <div class="sidebar-foot">
+      <button class="theme-toggle" aria-label="Переключить тему">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
